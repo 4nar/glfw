@@ -25,6 +25,7 @@ project "GLFW"
 
 		files
 		{
+            "src/platform.c",
 			"src/win32_init.c",
 			"src/win32_joystick.c",
 			"src/win32_module.c",
@@ -40,6 +41,7 @@ project "GLFW"
 		defines 
 		{ 
 			"_GLFW_WIN32",
+            "_GLFW_USE_WIN32",
 			"_CRT_SECURE_NO_WARNINGS"
 		}
 
