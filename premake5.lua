@@ -14,18 +14,18 @@ project "GLFW"
 		"src/init.c",
 		"src/input.c",
 		"src/monitor.c",
+
+		"src/platform.c",
 		"src/vulkan.c",
 		"src/window.c",
 	}
 
 	filter "system:windows"
-        buildoptions {"-std=c11", "-lgdi32"}
 		systemversion "latest"
         staticruntime "On"
 
 		files
 		{
-            "src/platform.c",
 			"src/win32_init.c",
 			"src/win32_joystick.c",
 			"src/win32_module.c",
