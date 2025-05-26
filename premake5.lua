@@ -14,8 +14,6 @@ project "GLFW"
 		"src/init.c",
 		"src/input.c",
 		"src/monitor.c",
-
-		"src/platform.c",
 		"src/vulkan.c",
 		"src/window.c",
 		"src/null_platform.h",
@@ -30,7 +28,6 @@ project "GLFW"
 		{
 			"src/win32_init.c",
 			"src/win32_joystick.c",
-			"src/win32_module.c",
 			"src/win32_monitor.c",
 			"src/win32_time.c",
 			"src/win32_thread.c",
@@ -38,7 +35,6 @@ project "GLFW"
 			"src/wgl_context.c",
 			"src/egl_context.c",
 			"src/osmesa_context.c",
-			"src/win32_platform.c",
 			"src/win32_platform.h"   
 		}
 
